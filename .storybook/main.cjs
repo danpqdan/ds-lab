@@ -7,7 +7,6 @@ module.exports = {
     "@storybook/addon-links",
     "@storybook/addon-essentials",
     "@storybook/addon-interactions",
-    '@storybook/addon-a11y'
   ],
   "framework": "@storybook/react",
   "core": {
@@ -18,7 +17,7 @@ module.exports = {
   },
   viteFinal: (config, { configType }) => {
     if (configType === 'PRODUCTION') {
-      config.base = '/ds-lab/'
+      config.base = '/ds-lab'
     }
 
     return config
